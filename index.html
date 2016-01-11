@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TP1 - Movie List with Backbone</title>
+
+	<style>
+
+		form, input, textarea {
+			display: block;
+			margin: 20px 0;
+		}
+
+	</style>
+</head>
+<body>
+
+<div id="app">
+
+	<h1>Backbone movie list</h1>
+
+	<form action="#">
+		<h2>Add a new movie</h2>
+
+		<input type="text" class="movie-name" name="movieName" placeholder="Movie Name" required>
+
+		<input type="text" class="movie-poster" name="posterUrl" placeholder="Poster URL" required>
+
+		<textarea name="synopsis" class="movie-synopsis" cols="30" required rows="10">Synopsis</textarea>
+
+		<select name="genre" class="movie-genre" required>
+			<option value="action">Action</option>
+			<option value="adventure">Adventure</option>
+			<option value="comedy">Comedy</option>
+			<option value="romance">Romance</option>
+			<option value="horror">Horror</option>
+			<option value="scifi">Sci-Fi</option>
+		</select>
+
+		<input type="submit" placeholder="Add movie">
+	</form>
+
+	<div class="movie-list-ctn">
+		<h3>My movies</h3>
+		<ul class="movie-list js-movie-list">
+			
+		</ul>
+	</div>
+</div>
+
+<script src="lib/jquery.min.js"></script>
+<script src="lib/underscore.min.js"></script>
+<script src="lib/backbone.min.js"></script>
+
+<script src="app/app.js"></script>
+	
+</body>
+</html>
